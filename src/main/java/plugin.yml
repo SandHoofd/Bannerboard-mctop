@@ -1,0 +1,5 @@
+main: bbaddonmcmmo.BBAddonMCMMO
+name: BannerBoard_Addon_MCMMO
+version: 1.0.0
+author: PublicGameCoder & SandHoofdNL
+description: An BannerBoard addon to intergrate MCMMO!
