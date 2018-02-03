@@ -12,12 +12,12 @@ import me.bigteddy98.bannerboard.api.BannerBoardManager;
 public class BBAddonMCMMO extends JavaPlugin {
 	
 	private static BBAddonMCMMO instance;
-	
+	private mcMMO mcmmo;
 	@Override
 	public void onEnable() {
 		instance = this;
 		
-		mcMMO mcmmo = (mcMMO) getServer().getPluginManager().getPlugin("mcMMO");
+		mcmmo = (mcMMO) getServer().getPluginManager().getPlugin("mcMMO");
 		if (mcmmo == null || !mcmmo.isEnabled()) {
 			System.out.println("mcMMO is not included or is not enabled!");
 			getServer().getPluginManager().disablePlugin(this);
@@ -35,5 +35,9 @@ public class BBAddonMCMMO extends JavaPlugin {
 	
 	public BannerBoardAPI getBannerBoardAPI() {
 		return BannerBoardManager.getAPI();
+	}
+	
+	public mcMMO getmcMMO() {
+		return this.mcmmo;
 	}
 }
