@@ -27,6 +27,8 @@ public class BBAddonMCMMO extends JavaPlugin {
 		ConfigManager.getManager();
 		DataBaseManager.getManager();
 		System.out.println("BannerBoard-McMMO-Addon is enabled!");
+		
+		mcMMO m = getmcMMO();
 	}
 
 	public static BBAddonMCMMO getInstance() {
